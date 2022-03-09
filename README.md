@@ -9,12 +9,19 @@ Simple FFmpeg scripts to generate gif files.
 
 ### Requirements:
 Shell (Tested with GNU Bash 5.1.16(1)) but should be sh compatible.
+
 ffmpeg (Tested with ffmpeg 2:5.0-4) but earlier version should also work provided they support the following filters:
+
     palettegen - https://ffmpeg.org/ffmpeg-filters.html#palettegen-1
+
     paletteuse - https://ffmpeg.org/ffmpeg-filters.html#toc-paletteuse
+
     crop - https://ffmpeg.org/ffmpeg-filters.html#crop
+
     fps - https://ffmpeg.org/ffmpeg-filters.html#fps-1
+
     trim - https://ffmpeg.org/ffmpeg-filters.html#trim
+
 
 ### To-Do:
  1. Impliment a more complex filter-chain that doesn't require an intermediate palette.png file.

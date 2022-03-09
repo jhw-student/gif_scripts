@@ -3,8 +3,8 @@ Simple FFmpeg scripts to generate gif files.
 
 ### Notes:
 1. Written and tested with the bash shell (GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu))
-2. This file must be executable and readable by the user running the script `chmod 740 imgs_to_gif.sh`
-3. The script is executed with `sh imgs_to_gif.sh`
+2. The .sh script files must be executable and readable by the user running the script `chmod 740 imgs_to_gif.sh`
+3. Executed with `sh imgs_to_gif.sh`
 4. The filesize of the output can be quite large e.g: 20 MiB+
 
 ### Requirements:

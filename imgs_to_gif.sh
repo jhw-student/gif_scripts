@@ -19,10 +19,10 @@ in_file="%04d.png";
 outfile=`date +%s`;
 
 # Generate a color-pallete based on the input file and saves it as "pallette.png" in the current working directory.
-# If it asks you if you want to overwrite the pallete you want yes `y`
+# If it asks you if you want to overwrite the pallete you likely want yes `y`
 ffmpeg -i "$in_file" -lavfi palettegen=reserve_transparent=on pallette.png;
 
 # Uses the pallete and the video to create a gif.
 # framerate is the number of "Frames Per Second" of input and fps is the output (Can be used to speed-up/Slow-down the video).
-# By default you probably want them both to be equal to `frameRate()`.
-ffmpeg -framerate 60 -i "$in_file" -i "pallette.png" -lavfi fps=fps=60,paletteuse "$outfile"".gif"
+# By default you probably want framerate to equal your processing `frameRate()` and fps to equal 30
+ffmpeg -framerate 60 -i "$in_file" -i "pallette.png" -lavfi fps=fps=30,paletteuse "$outfile"".gif"
